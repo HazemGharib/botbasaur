@@ -13,6 +13,9 @@ const isBulbasaurFavourite = (msg) =>
 
 client.on("ready", () => {
   console.log("Our bot is ready to go!!!!");
+  setInterval(() => {
+    console.log("SLAP! Wake up Heroku");
+  }, 1000 * 60 * 5);
 });
 
 client.on("messageDelete", (msg) => {
